@@ -1,0 +1,161 @@
+/*****
+GENERAL
+*****/
+html {
+  scroll-behavior: smooth;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
+}
+hr {
+    padding: 0px;
+    width: 200px;
+    border : solid 3px #ffc107;
+}
+
+
+/*****
+NAVBAR
+*****/
+.bg {
+    background-color: black;
+    border-bottom: 1px solid #ffc107;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-transform: uppercase;
+    
+}
+.collapse-center {
+    text-align: center;
+}
+.navbar-toggler-icon {
+    background-color: #ffc107;
+    border-color: transparent;
+}
+.navbar-toggler-icon:hover {
+    background-color: #D26F00;
+}
+
+
+/*****
+INTRO
+*****/
+#hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(255,255,255 ,0.1)), url(Images/web.jpg) 0% 0%/cover no-repeat;
+} /*This is to include a picture in the section tag as a background image. Anything in the section will be on top of it. However it doesnt fit all the user's page so we need to fill viewport*/
+.fill-viewport {
+    min-height: 100vh;
+} /*We add this class ourselves. It doesnt exist in bootstrap. We add it to the row division so it will fit the entire row section. Why in ROW and not container ? - Except in certain very special occasions, every utility class you need on a containing content body shoudl go in the .row. This is to have a good code structure*/
+.heading h1, h3 {
+    color: #FFC107;
+}
+
+
+/*****
+SKILLS
+*****/
+.resize {
+    font-size: 3.5rem;
+    margin-top: 10px;
+}
+.space{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    
+}
+.right-border {
+    border-right: 1px solid #ffc107;
+}
+.purple {
+    color: #7289DA;
+}
+.red {
+    color:#E84729;
+}
+.orange {
+    color: #E96228;
+}
+.blue {
+    color: #2862E9;
+}
+.yellow {
+    color: #F3D732;
+}
+.cyan {
+    color: #5AD2F3;
+}
+.green {
+    color: #22AE5A;
+}
+.heading h2, h4 {
+    color: #464854;
+}
+.itil {
+    width: 6rem;
+}
+.snow {
+    width: 3.5rem;
+}
+#style-skills {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#other-style {
+    margin-top: 10px;
+}
+.spacing {
+    margin: 15px 25px 15px 25px;
+}
+
+
+/*****
+PORTFOLIO
+*****/
+#portfolio {
+    background-color: #1C2A3A;
+}
+#style-portfolio {
+   padding-top: 15px; 
+   margin-bottom: 15px;
+   color: #ffc107;
+}
+#portfolio .img-thumbnail {
+    width: 100%;
+    height: 100%;
+  
+}
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+.aerial {
+    margin: 10px 0 15px;
+}
+
+
+/*****
+FOOTER
+*****/
+footer {
+    background: #1C2A3A;
+    margin-top: 10px
+    padding: 15px 0 15px;
+    border-top: 1px solid #ffc107;
+}
+footer i {
+    font-size: 15px;
+    margin: 15px;
+    color: #ffc107;
+    height: 18px; /*Used to avoid the part below to move down with hover*/
+    transition: all .1s ease-in-out;
+}
+footer i:hover {
+    font-size: 17px;
+    transform: scale(1);
+}
+footer h6 {
+    font-weight: normal;
+    font-size: 12px;
+    color: #ffc107;
+}
